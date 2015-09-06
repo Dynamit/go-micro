@@ -1,4 +1,4 @@
-# MySQL Shared Instance
+# MySQL
 
 This package is intended to allow Go applications to share a MySQL connection.
 
