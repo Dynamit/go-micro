@@ -19,7 +19,7 @@ MYSQL_ENV_MYSQL_DATABASE
 First, you must import the package into your project.
 
 ```
-import github.com/Dynamit/go-micro/tree/master/mysql
+import github.com/dynamit/go-micro/mysql
 ```
 
 To open (or reuse) a MySQL connection:
