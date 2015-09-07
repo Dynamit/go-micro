@@ -49,6 +49,57 @@ This response format is for returning generic lists with pagination.
 }
 ```
 
+### ErrResp
+
+This response is for general (non-field) errors.
+
+```
+{
+	"meta": {
+		"error_code": 404,
+		"error_message": "Could not find requsted object."
+	}
+}
+```
+
+### FieldErrResp
+
+This response is for errors that occur at a field level.
+
+```
+{
+	"meta": {
+		"error_code": 400,
+		"error_message": "Object failed validation.",
+		"error_fields": [
+			{
+				"field": "name",
+				"errors": [
+					{
+						"error_code": 20,
+						"error_message": "Value did not meet the minimum length (8) requirements." 
+					}
+				]
+			}
+		]
+	}
+}
+```
+
+### CreatedResp
+
+This response is for successful object creations via POST.
+
+```
+{
+	"meta": {
+		"id": 1
+	}
+}
+```
+
+###
+
 ## JSON Formatting
 
 Many times you will need to decode an input JSON data structure. A method is provided to do so, taking in the http.Request and destination interface{} (struct).
