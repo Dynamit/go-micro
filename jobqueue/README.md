@@ -43,7 +43,7 @@ for i := 0; i < 100; i++ {
 }
 ```
 
-### By Anology
+### By Analogy
 
 - `Broker`: A grocery store managing multiple cash registers.
 - `JobQueue`: An individual cash register. Capable of handling one customer/`Job` at a time. Multiple registers can be handling customers at the same time.
