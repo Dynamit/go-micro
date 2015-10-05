@@ -14,6 +14,7 @@ func ParseJSON(r *http.Request, i interface{}) error {
 
 	//
 	// Get the JSON data from the input request
+	defer r.Body.Close()
 	var body, _ = ioutil.ReadAll(io.LimitReader(r.Body, 1048576)) // limits to 1MB of input
 
 	//

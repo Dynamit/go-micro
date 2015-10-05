@@ -4,7 +4,7 @@ This package is intended to allow Go applications to share a MySQL connection.
 
 ## Environment Variables
 
-The following environment variables must be set in order for the MySQL package to locate the MySQL server. These are typically set my labeling your MySQL docker container "MySQL" and linking it to your go application container.
+The following environment variables must be set in order for the MySQL package to locate the MySQL server. These are typically set my labeling your MySQL docker container "mysql" and linking it to your go application container.
 
 ```
 MYSQL_PORT_3306_TCP_ADDR

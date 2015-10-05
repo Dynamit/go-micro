@@ -6,7 +6,7 @@ import (
 	"github.com/julienschmidt/httprouter"
 	"golang.org/x/net/context"
 
-	"app/pkg/dttp/mux"
+	"github.com/dynamit/go-micro/http/mux"
 )
 
 type Server struct {
